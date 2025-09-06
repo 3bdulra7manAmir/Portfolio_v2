@@ -7,30 +7,34 @@ abstract class ColorManagerBase
   Color get kTransparent;
 
   // Black Color Range
-  /// [000000] //NotUsed
+  /// [121212]
   Color get kBlack001;
-  /// [2D2D2D]
+  /// [1C1C1B]
   Color get kBlack002;
-  /// [333333]
-  Color get kBlack003;
-  /// [000000]
-  Color get kBlack004;
 
   // Grey Color Range
-  /// [_959595]
+  /// [_595959]
   Color get kGrey001;
+  /// [_707070]
+  Color get kGrey002;
+  /// [_959595]
+  Color get kGrey003;
 
   // White Color Range
   /// [_FFFFFF]
   Color get kWhite001;
 
-  // Green Color Range
-  /// [_2AAE1D]
-  Color get kGreen001;
+  // // Green Color Range
+  // /// [_2AAE1D]
+  // Color get kGreen001;
 
-  // // Orange Color Range
-  // /// [_F4A91F]
-  // Color get kOrange001;
+  // Orange Color Range
+  /// [_F96802]
+  Color get kOrange001;
+  /// [_F36b01]
+  Color get kOrange002;
+  /// [_F96D00]
+  Color get kOrange003;
 
   // // Yellow Color Range
   // /// [FFDE00]
@@ -49,7 +53,11 @@ abstract class ColorManagerBase
 
 abstract class GradientManagerBase {
 
+  /* [Color(0xff9c4501), Color(0xff2D2D2D), 
+    Color(0xff2D2D2D), Color(0xff161616),] */
+  LinearGradient get kRole;
+
   /* [Color(0xff161616), Color(0xff2D2D2D), 
     Color(0xff2D2D2D), Color(0xff161616),] */
-  SweepGradient get kBackgroundLinear;
+  LinearGradient get kLogo;
 }

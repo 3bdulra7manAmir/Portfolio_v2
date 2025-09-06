@@ -17,8 +17,8 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final activeColor = AppColors.color.kGreen001;
-    final inactiveColor = AppColors.color.kWhite001.withValues(alpha: 0.7);
+    final activeColor = AppColors.color.kOrange001;
+    final inactiveColor = AppColors.color.kWhite001;
 
     return GestureDetector(
       onTap: onTap,

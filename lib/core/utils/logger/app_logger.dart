@@ -1,6 +1,7 @@
 import 'package:logger/logger.dart';
 
 class AppLogger {
+  AppLogger._();
   // ANSI codes // OR AS A LIST...
   static const String _reset = '\x1B[0m';
   static const String _green = '\x1B[32m';

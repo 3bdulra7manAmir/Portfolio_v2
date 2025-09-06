@@ -21,18 +21,12 @@ class BorderCircular
 {
   BorderCircular._();
 
-  /// [circular: 12.r]
-  BorderRadius get introCardDot => BorderRadius.circular(12.r);
+  /// [circular: 8.r]
+  BorderRadius get hireMe => BorderRadius.circular(8.r);
+
   /// [circular: 16.r]
-  BorderRadius get coacheInfoCard => BorderRadius.circular(16.r);
-  /// [circular: 20.r]
-  BorderRadius get coachesCard => BorderRadius.circular(20.r);
-  /// [circular: 25.r]
-  BorderRadius get textField => BorderRadius.circular(25.r);
-  /// [circular: 24.r]
-  BorderRadius get sportWidget => BorderRadius.circular(24.r);
-  /// [circular: 100.r]
-  BorderRadius get sportIcon => BorderRadius.circular(100.r);
+  BorderRadius get mainGreySpace => BorderRadius.circular(16.r);
+
 
 }
 

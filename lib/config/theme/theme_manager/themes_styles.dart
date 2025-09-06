@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../core/constants/app_borders.dart';
 import '../../../core/constants/app_margins.dart';
 import '../../../core/constants/app_sizes.dart';
 import '../color_manager/colors.dart';
@@ -41,10 +40,10 @@ abstract class LightThemeStyles
   static OutlineInputBorder textFieldBorder()
   {
     return OutlineInputBorder(
-    borderRadius: AppRadiuses.circular.textField,
+    //borderRadius: AppRadiuses.circular.textField,
     borderSide: BorderSide(
       width: Sizes.s1.w,
-      color: AppColors.color.kWhite001.withValues(alpha: 0.35),
+      color: AppColors.color.kWhite001,
     ),
   );
   }
@@ -103,10 +102,10 @@ abstract class DarkThemeStyles
   static OutlineInputBorder textFieldBorder()
   {
     return OutlineInputBorder(
-    borderRadius: AppRadiuses.circular.textField,
+    //borderRadius: AppRadiuses.circular.textField,
     borderSide: BorderSide(
       width: Sizes.s1.w,
-      color: AppColors.color.kWhite001.withValues(alpha: 0.35),
+      color: AppColors.color.kWhite001,
     ),
   );
   }

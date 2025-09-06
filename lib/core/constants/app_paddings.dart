@@ -18,7 +18,10 @@ class All
   All._();
 
   ///[all: 4]
-  final EdgeInsets sportBall = const EdgeInsets.all(4);
+  final EdgeInsets mainGreySpace = const EdgeInsets.all(4);
+
+  ///[all: 5]
+  final EdgeInsets socialMediaLinks = const EdgeInsets.all(5);
 }
 
 

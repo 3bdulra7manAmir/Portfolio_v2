@@ -46,7 +46,7 @@ class PortfolioScreenUtil extends StatelessWidget
   Widget build(BuildContext context)
   {
     return ScreenUtilInit(
-      designSize: const Size(1440, 900),
+      designSize: const Size(1920, 1080),
       builder: (context, child) => const PortfolioMultiProvider(),
     );
   }
@@ -80,15 +80,13 @@ class PortfolioMaterial extends StatelessWidget {
     final themeMode = context.select<ThemeCubit, ThemeMode>((cubit) {
       final state = cubit.state;
       return state is SuccessState<ThemeMode>
-          ? state.data
-          : ThemeMode.dark;
+        ? state.data : ThemeMode.dark;
     });
 
     final locale = context.select<LocalizationCubit, Locale>((cubit) {
       final state = cubit.state;
       return state is SuccessState<Locale>
-          ? state.data
-          : const Locale('en');
+        ? state.data : const Locale('en');
     });
 
     return MaterialApp.router(

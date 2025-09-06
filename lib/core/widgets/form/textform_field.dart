@@ -70,7 +70,7 @@ class CustomTextFormField extends StatelessWidget
         decoration: InputDecoration(
           hintText: hintText,
           hintTextDirection: hintTextDirection,
-          hintStyle: hintStyle ?? AppStyles.thin(fontColor: AppColors.color.kWhite001.withValues(alpha: 0.48)),
+          hintStyle: hintStyle ?? AppStyles.thin(fontColor: AppColors.color.kWhite001),
           prefixIcon: prefixIcon,
           suffixIcon: suffixIcon,
           suffixStyle: suffixStyle,

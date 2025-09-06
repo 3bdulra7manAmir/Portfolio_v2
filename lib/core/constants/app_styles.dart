@@ -53,7 +53,7 @@ abstract class AppStyles
     );
   }
 
-  /// Size= [20] Weight= [w400], Color= [_FFFFFF],
+  /// Size= [20] Weight= [w700], Color= [_FFFFFF],
   static TextStyle bold({
     double? fontSize,
     FontWeight? fontWeight,
@@ -66,7 +66,7 @@ abstract class AppStyles
   {
     return TextStyle(
       fontSize: fontSize ?? AppFontSizes.large .sp,
-      fontWeight: fontWeight ?? AppFontWeights.regularWeight,
+      fontWeight: fontWeight ?? AppFontWeights.boldWeight,
       color: fontColor ?? AppColors.color.kWhite001,
       fontFamily: fontFamily ?? AppFonts.font.fontName,
       decoration: textDecoration ?? TextDecoration.none,
@@ -133,7 +133,7 @@ abstract class AppStyles
     return TextStyle(
       fontSize: fontSize ?? AppFontSizes.xSmall.sp,
       fontWeight: fontWeight ?? AppFontWeights.regularWeight,
-      color: fontColor ?? AppColors.color.kWhite001,
+      color: fontColor ?? AppColors.color.kGrey002,
       fontFamily: fontFamily ?? AppFonts.font.fontName,
       decoration: textDecoration ?? TextDecoration.none,
       decorationColor: textDecorationColor,
