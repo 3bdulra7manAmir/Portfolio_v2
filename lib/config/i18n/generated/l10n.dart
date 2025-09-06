@@ -59,24 +59,44 @@ class S {
     return Intl.message('خطأ', name: 'error', desc: '', args: []);
   }
 
-  /// `المنيو`
-  String get menu {
-    return Intl.message('المنيو', name: 'menu', desc: '', args: []);
-  }
-
-  /// `البروفايل`
-  String get profile {
-    return Intl.message('البروفايل', name: 'profile', desc: '', args: []);
-  }
-
-  /// `الخدمات`
-  String get services {
-    return Intl.message('الخدمات', name: 'services', desc: '', args: []);
-  }
-
   /// `الرئيسيـة`
   String get home {
     return Intl.message('الرئيسيـة', name: 'home', desc: '', args: []);
+  }
+
+  /// `عني`
+  String get aboutMe {
+    return Intl.message('عني', name: 'aboutMe', desc: '', args: []);
+  }
+
+  /// `مشاريعي`
+  String get myProjects {
+    return Intl.message('مشاريعي', name: 'myProjects', desc: '', args: []);
+  }
+
+  /// `السيرة الذاتية`
+  String get resume {
+    return Intl.message('السيرة الذاتية', name: 'resume', desc: '', args: []);
+  }
+
+  /// `داكن`
+  String get dark {
+    return Intl.message('داكن', name: 'dark', desc: '', args: []);
+  }
+
+  /// `فاتح`
+  String get light {
+    return Intl.message('فاتح', name: 'light', desc: '', args: []);
+  }
+
+  /// `الشعار`
+  String get logo {
+    return Intl.message('الشعار', name: 'logo', desc: '', args: []);
+  }
+
+  /// `وظفني`
+  String get hireMe {
+    return Intl.message('وظفني', name: 'hireMe', desc: '', args: []);
   }
 }
 

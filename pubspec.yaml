@@ -92,7 +92,7 @@ flutter:
     - assets/fonts/Roboto/
 
     - assets/icons/App_Icon/
-    - assets/icons/Home/
+    - assets/icons/LandingPage/
     - assets/icons/Bottom_Nav_Bar/
 
     - assets/imgs/Home/

@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../config/theme/color_manager/colors.dart';
+
 
 
 class Home extends StatelessWidget
 {
-  Home({super.key});
+  const Home({super.key});
 
-  final TextEditingController searchController = TextEditingController();
 
   @override
   Widget build(BuildContext context)
@@ -13,7 +16,6 @@ class Home extends StatelessWidget
     return Container();
   }
 }
-
 
 
 

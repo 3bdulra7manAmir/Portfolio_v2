@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../config/router/app_router.dart';
 import '../../../../config/router/app_routes.dart';
+import '../../../../core/services/database/shared_preferences/shared_pref_manager.dart';
 import '../../../../core/widgets/circular_indicator.dart';
 
 
@@ -19,7 +20,14 @@ class _SplashState extends State<Splash>
   void initState()
   {
     super.initState();
-    Future.delayed(const Duration(seconds: 2), () => AppRouter.router.goNamed(AppRoutes.home),);
+    setFirstLaunch();
+    //Future.delayed(const Duration(seconds: 9), () => AppRouter.router.pushReplacementNamed(AppRoutes.home),);
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) => AppRouter.router.pushReplacementNamed(AppRoutes.home),);
+  }
+
+  void setFirstLaunch()
+  {
+    SharedPrefManager().setFirstLaunch(0);
   }
 
   @override

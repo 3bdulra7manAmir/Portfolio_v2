@@ -13,10 +13,9 @@ class _IconsPNG
 {
   _IconsPNG._();
 
-  /// [ Home ]
+  /// [ LandingPage ]
   //[Al-Haddaf.png]
   final String appLogo = 'assets/icons/App_Logo/Al-Haddaf.png';
-  final String egyptFlag = 'assets/icons/Home/Egypt_flag.png';
 }
 ///-----------------------------------------------------------------//
 
@@ -25,25 +24,11 @@ class _IconsPNG
 class _IconsSvg
 {
   _IconsSvg._();
-  ///[ Home ]
-  //[ Search Maginifer .svg ]
-  final String searchMaginifer = 'assets/icons/Home/Search_magnifier.svg';
-  //[ Filter Pin .svg ]
-  final String filterPin = 'assets/icons/Home/Filter_pin_orange.svg';
-  //[ Sport Symbol .svg ]
-  final String sportSymbol = 'assets/icons/Home/Sport_symbol.svg';
-  //[ Notification Bell .svg ]
-  final String notificationBell = 'assets/icons/Home/Notification_bell.svg';
-  //[ Left Arrow Grey .svg ]
-  final String leftArrowGrey = 'assets/icons/Home/Left_arrow_grey.svg';
-  //[ Star .svg ]
-  final String star = 'assets/icons/Home/Star.svg';
-  //[ Location Orange .svg ]
-  final String location = 'assets/icons/Home/Location_orange.svg';
-  //[ Play White .svg ]
-  final String playWhite = 'assets/icons/Home/Play_white.svg';
-
-
+  ///[ LandingPage ]
+  // Theme Mode
+  final String darkMode = 'assets/icons/LandingPage/Dark_mode.svg';
+  final String lightMode = 'assets/icons/LandingPage/Light_mode.svg';
+  final String portfolio = 'assets/icons/LandingPage/Portfolio.svg';
 
   //[ Bottom Nav Bar ]
   final String home = 'assets/icons/Bottom_Nav_Bar/Home.svg';
@@ -60,11 +45,7 @@ class _IMGsPNG
   _IMGsPNG._();
 
   ///[Home]
-  final String longShotRunningKids = 'assets/imgs/Home/Long_shot_kids_running.png';
-  //Player img
-  final String player = 'assets/imgs/Home/Afro_american.png';
-  //SportsMan img
-  final String sportMan = 'assets/icons/Home/Sportsman.png';
+  final String longShotRunningKids = 'assets/imgs/LandingPage/Long_shot_kids_running.png';
 }
 ///-----------------------------------------------------------------//
 
@@ -76,12 +57,6 @@ class _IMGsSvg
 
   ///[Home]
   //First Scroll Card
-  final String introCard = 'assets/imgs/Home/Intro_card.svg';
-  //Match Card
-  final String upComingMatchCard = 'assets/imgs/Home/UpComing_match_card.svg';
-  // Club Image
-  final String clubStoreImg = 'assets/icons/Home/Sports_bag.png';
-  // Be Disringushed
-  //final String beDistingushed = '/assets/imgs/Home/';
+  final String introCard = 'assets/imgs/LandingPage/Intro_card.svg';
 }
 ///-----------------------------------------------------------------//

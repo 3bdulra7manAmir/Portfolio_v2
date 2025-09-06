@@ -20,7 +20,7 @@ class SharedPrefManager
   Future<void> setThemeMode(String mode) => SharedPrefInit.prefs.setString(_themeKey, mode);
 
   /// [Localization]
-  String get localeLang => SharedPrefInit.prefs.getString(_localeKey) ?? 'ar';
+  String get localeLang => SharedPrefInit.prefs.getString(_localeKey) ?? 'en';
   Future<void> setLocaleLang(String lang) => SharedPrefInit.prefs.setString(_localeKey, lang);
 
   /// [First_Launch]

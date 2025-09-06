@@ -3,8 +3,14 @@
 
   "error": "Error",
 
-  "menu": "Menu",
-  "profile": "Profile",
-  "services": "Services",
-  "home": "Home"
+  "home": "Home",
+  "aboutMe": "About Me",
+  "myProjects": "Projects",
+  "resume": "Resume",
+
+  "dark": "Dark",
+  "light": "Light",
+
+  "logo": "Logo",
+  "hireMe": "Hire me"
 }

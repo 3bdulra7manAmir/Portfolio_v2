@@ -19,7 +19,6 @@ class AppTheme
       appBarTheme: LightThemeStyles.appBarTheme,
       dialogTheme: LightThemeStyles.dialogTheme,
       bottomSheetTheme: LightThemeStyles.bottomSheetTheme,
-      
     );
   }
 
@@ -37,7 +36,6 @@ class AppTheme
       appBarTheme: DarkThemeStyles.appBarTheme,
       dialogTheme: DarkThemeStyles.dialogTheme,
       bottomSheetTheme: DarkThemeStyles.bottomSheetTheme,
-      
     );
   }
 }

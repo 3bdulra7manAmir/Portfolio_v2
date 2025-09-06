@@ -11,10 +11,10 @@ abstract class AppRoutes
   // [Home]
   static const home = '/home';
   // [Home]
-  static const profile = '/profile';
+  static const aboutMe = '/about_Me';
   // [Home]
-  static const services = '/services';
+  static const projects = '/projects';
   // [Home]
-  static const menu = '/menu';
+  static const resume = '/resume';
 
 }

@@ -24,11 +24,11 @@ class LocalizationCubit extends Cubit<DefaultState<Locale>> {
   }
 
   /// Switch to English
-  void setEnglish() {
+  void setEnglish() async {
     try {
       emit(const LoadingState());
+      await SharedPrefManager().setLocaleLang('en');
       emit(const SuccessState(Locale('en')));
-      SharedPrefManager().setLocaleLang('en');
       AppLogger.debug('Localization is now: en');
     } catch (e) {
       emit(FailureState(e.toString()));
@@ -36,12 +36,12 @@ class LocalizationCubit extends Cubit<DefaultState<Locale>> {
   }
 
   /// Switch to Arabic
-  void setArabic() {
+  void setArabic() async {
     try {
       emit(const LoadingState());
+      await SharedPrefManager().setLocaleLang('ar');
       emit(const SuccessState(Locale('ar')));
-      SharedPrefManager().setLocaleLang('ar');
-      AppLogger.debug('Localization is now: AR');
+      AppLogger.debug('Localization is now: ar');
     } catch (e) {
       emit(FailureState(e.toString()));
     }

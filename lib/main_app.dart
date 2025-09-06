@@ -46,7 +46,7 @@ class PortfolioScreenUtil extends StatelessWidget
   Widget build(BuildContext context)
   {
     return ScreenUtilInit(
-      designSize: const Size(440, 956),
+      designSize: const Size(1440, 900),
       builder: (context, child) => const PortfolioMultiProvider(),
     );
   }
@@ -72,44 +72,44 @@ class PortfolioMultiProvider extends StatelessWidget
 }
 
 
-class PortfolioMaterial extends StatelessWidget
-{
+class PortfolioMaterial extends StatelessWidget {
   const PortfolioMaterial({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ThemeCubit, DefaultState<ThemeMode>>(
-      builder: (context, themeState) {
-        ThemeMode themeMode = ThemeMode.dark;
-        if (themeState is SuccessState<ThemeMode>) themeMode = themeState.data;
+    final themeMode = context.select<ThemeCubit, ThemeMode>((cubit) {
+      final state = cubit.state;
+      return state is SuccessState<ThemeMode>
+          ? state.data
+          : ThemeMode.dark;
+    });
 
-        return BlocBuilder<LocalizationCubit, DefaultState<Locale>>(
-          builder: (context, localeState) {
-            Locale locale = const Locale('ar');
-            if (localeState is SuccessState<Locale>) locale = localeState.data;
+    final locale = context.select<LocalizationCubit, Locale>((cubit) {
+      final state = cubit.state;
+      return state is SuccessState<Locale>
+          ? state.data
+          : const Locale('en');
+    });
 
-            return MaterialApp.router(
-              routerConfig: AppRouter.router,
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
 
-              localizationsDelegates: const [
-                S.delegate,
-                GlobalMaterialLocalizations.delegate,
-                GlobalWidgetsLocalizations.delegate,
-                GlobalCupertinoLocalizations.delegate,
-              ],
-              supportedLocales: S.delegate.supportedLocales,
-              locale: locale,
+      localizationsDelegates: const [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
+      locale: locale,
 
-              theme: AppTheme.lightTheme(),
-              darkTheme: AppTheme.darkTheme(),
-              themeMode: themeMode,
+      theme: AppTheme.lightTheme(),
+      darkTheme: AppTheme.darkTheme(),
+      themeMode: themeMode,
 
-              debugShowCheckedModeBanner: false,
-            );
-          },
-        );
-      },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
+
 

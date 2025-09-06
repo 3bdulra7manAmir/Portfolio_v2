@@ -60,7 +60,7 @@ abstract class LightThemeStyles
     scrolledUnderElevation: 0,
     surfaceTintColor: AppColors.color.kTransparent,
     backgroundColor: AppColors.color.kTransparent,
-    elevation: 0,
+    elevation: 2,
   );
 
   static DialogThemeData get dialogTheme => const DialogThemeData();
@@ -122,7 +122,7 @@ abstract class DarkThemeStyles
     scrolledUnderElevation: 0,
     surfaceTintColor: AppColors.color.kTransparent,
     backgroundColor: AppColors.color.kTransparent,
-    elevation: 0,
+    elevation: 2,
   );
 
   static DialogThemeData get dialogTheme => const DialogThemeData();

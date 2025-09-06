@@ -34,7 +34,7 @@ class AppLogger {
 
   static void error(String message, {Object? error, StackTrace? stackTrace})
   {
-    _logger.e('$_red$message$_reset', error: error == null ? null : '$_red$error$_reset',
+    _logger.e('$_purple$message$_reset', error: error == null ? null : '$_purple$error$_reset',
       stackTrace: stackTrace);
   }
 
