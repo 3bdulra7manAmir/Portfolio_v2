@@ -99,6 +99,11 @@ class S {
     return Intl.message('وظفني', name: 'hireMe', desc: '', args: []);
   }
 
+  /// `تواصل معي`
+  String get contactMe {
+    return Intl.message('تواصل معي', name: 'contactMe', desc: '', args: []);
+  }
+
   /// `اهلا, انا`
   String get hi {
     return Intl.message('اهلا, انا', name: 'hi', desc: '', args: []);
@@ -143,6 +148,7 @@ class S {
       args: [],
     );
   }
+
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

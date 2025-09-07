@@ -10,7 +10,9 @@ import '../error_widget.dart';
 import 'button.dart';
 
 class HireMeButton extends StatelessWidget {
-  const HireMeButton({super.key});
+  const HireMeButton({super.key, required this.title});
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +30,7 @@ class HireMeButton extends StatelessWidget {
       builder: (context, state) {
         final isLoading = state is LoadingState;
         return CustomButton(
-          text: 'Hire Me',
+          text: title,
           onPressed: isLoading
             ? () {} : () {
             AppLogger.debug('Opening WhatsApp...');

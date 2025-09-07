@@ -40,7 +40,7 @@ class MainScaffold extends StatelessWidget {
                     onTap: _goBranch
                   ),
                   const Spacer(),
-                  const HireMeButton(),
+                  HireMeButton(title: S.current.hireMe,),
                 ],
               ).marginOnly(top: 30.h),
               Sizes.s50.verticalSpace,

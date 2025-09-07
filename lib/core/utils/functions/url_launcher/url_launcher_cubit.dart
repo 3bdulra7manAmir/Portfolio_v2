@@ -24,6 +24,7 @@ class UrlLauncherCubit extends Cubit<DefaultState<void>> {
 
       final launched = await launchUrl(
         uri,
+        mode: LaunchMode.externalApplication,
       );
 
       if (launched) {

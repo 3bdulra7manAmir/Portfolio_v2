@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/widgets/circular_indicator.dart';
 import '../../features/01_onboarding/presentation/screens/splash_view.dart';
 import '../../features/02_home/presentation/screens/home_view.dart';
+import '../../features/03_about_me/presentation/screens/about_me_view.dart';
 import 'app_routes.dart';
 import 'nav_bar_navigator.dart';
 import 'route_observer.dart';
@@ -50,9 +51,7 @@ abstract class AppRouter
               GoRoute(
                 path: AppRoutes.aboutMe,
                 name: AppRoutes.aboutMe,
-                builder: (_, _) => const Scaffold(
-                  body: Center(child: Text('About Me Screen Placeholder')),
-                ),
+                builder: (_, _) => const AboutMe()
               ),
             ],
           ),

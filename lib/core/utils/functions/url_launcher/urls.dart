@@ -11,4 +11,12 @@ abstract class Urls
   
   
   static const String resume = 'https://drive.usercontent.google.com/download?id=1VrzQg056S18Ie8IeurOdqL1B6Pg0grgK&export=download&authuser=0&confirm=t&uuid=84cf01f7-8405-4617-a64a-281164aa98ec&at=AN8xHoqGRxFSiJ4MomZsP_HpS8dU:1757242687798';
+  static Uri email = Uri(
+    scheme: 'mailto',
+    path: 'ethanhunt4d@email.com',
+    queryParameters: {
+      'subject': 'Job Opportunity',
+      'body': 'Hello Abdulrahman,',
+    },
+  );
 }
