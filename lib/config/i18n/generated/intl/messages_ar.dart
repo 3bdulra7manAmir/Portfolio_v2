@@ -39,5 +39,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "projects": MessageLookupByLibrary.simpleMessage("مشاريع"),
     "resume": MessageLookupByLibrary.simpleMessage("السيرة الذاتية"),
     "role": MessageLookupByLibrary.simpleMessage("مطور فلاتر"),
+    "services": MessageLookupByLibrary.simpleMessage("خدماتي"),
   };
 }

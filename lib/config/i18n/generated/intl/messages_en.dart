@@ -39,5 +39,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "projects": MessageLookupByLibrary.simpleMessage("Projects"),
     "resume": MessageLookupByLibrary.simpleMessage("Resume"),
     "role": MessageLookupByLibrary.simpleMessage("Flutter Developer"),
+    "services": MessageLookupByLibrary.simpleMessage("Services"),
   };
 }

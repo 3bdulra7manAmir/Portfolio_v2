@@ -10,6 +10,8 @@ abstract class AppRoutes
   /// [ NavBar ]
   // [Home]
   static const home = '/home';
+  // [Services]
+  static const services = '/services';
   // [Home]
   static const aboutMe = '/about_Me';
   // [Home]

@@ -64,6 +64,11 @@ class S {
     return Intl.message('الرئيسيـة', name: 'home', desc: '', args: []);
   }
 
+  /// `خدماتي`
+  String get services {
+    return Intl.message('خدماتي', name: 'services', desc: '', args: []);
+  }
+
   /// `عني`
   String get aboutMe {
     return Intl.message('عني', name: 'aboutMe', desc: '', args: []);
@@ -148,7 +153,6 @@ class S {
       args: [],
     );
   }
-
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

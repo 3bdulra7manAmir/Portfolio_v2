@@ -29,7 +29,7 @@ class NavBarItems extends StatelessWidget
           onTap: () => onTap(0),
         ),
         NavBar(
-          title: S.current.aboutMe,
+          title: S.current.services,
           isSelected: currentIndex == 1,
           onTap: () => onTap(1),
         ),
@@ -39,9 +39,14 @@ class NavBarItems extends StatelessWidget
           onTap: () => onTap(2),
         ),
         NavBar(
-          title: S.current.resume,
+          title: S.current.aboutMe,
           isSelected: currentIndex == 3,
           onTap: () => onTap(3),
+        ),
+        NavBar(
+          title: S.current.resume,
+          isSelected: currentIndex == 4,
+          onTap: () => onTap(4),
         ),
       ].addSeparator(child: Sizes.s35.horizontalSpace).toList(),
     );
