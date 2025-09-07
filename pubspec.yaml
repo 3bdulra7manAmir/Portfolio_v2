@@ -49,6 +49,8 @@ dependencies:
 
   # Util
   url_launcher: ^6.3.2
+  webview_flutter: ^4.4.2
+  webview_flutter_web: ^0.2.2+4
 
 # ===========================
 # Dev Dependencies
@@ -89,6 +91,14 @@ flutter:
         - asset: assets/fonts/Roboto/Roboto-Medium.ttf
         - asset: assets/fonts/Roboto/Roboto-Regular.ttf
         - asset: assets/fonts/Roboto/Roboto-SemiBold.ttf
+    
+    - family: Anago
+      fonts:
+        - asset: assets/fonts/Anago/Anago-Black.ttf
+        - asset: assets/fonts/Anago/Anago-Bold.ttf
+        - asset: assets/fonts/Anago/Anago-Thin.ttf
+        - asset: assets/fonts/Anago/Anago-Book.ttf
+        - asset: assets/fonts/Anago/Anago-Medium.ttf
 
   # Assets
   assets:

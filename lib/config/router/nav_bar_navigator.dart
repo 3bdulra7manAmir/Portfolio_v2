@@ -8,11 +8,14 @@ import '../../core/constants/app_paddings.dart';
 import '../../core/constants/app_sizes.dart';
 import '../../core/constants/app_styles.dart';
 import '../../core/extensions/margin.dart';
+import '../../core/utils/logger/app_logger.dart';
 import '../../core/widgets/buttons/hire_me.dart';
 import '../../core/widgets/column.dart';
 import '../../core/widgets/navbar/nav_bar_items.dart';
 import '../i18n/generated/l10n.dart';
 import '../theme/color_manager/colors.dart';
+import 'app_router.dart';
+import 'app_routes.dart';
 
 
 class MainScaffold extends StatelessWidget {
@@ -33,7 +36,13 @@ class MainScaffold extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  const Logo(),
+                  GestureDetector(
+                    onLongPress: () {
+                      AppLogger.debug('Admin Page');
+                      AppRouter.router.pushNamed(AppRoutes.login);
+                    },
+                    child: const Logo()
+                  ),
                   const Spacer(),
                   NavBarItems(
                     currentIndex: currentIndex, 

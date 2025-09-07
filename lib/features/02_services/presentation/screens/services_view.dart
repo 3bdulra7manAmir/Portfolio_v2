@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/service_grid_list.dart';
+
 
 class Services extends StatelessWidget
 {
@@ -8,7 +10,7 @@ class Services extends StatelessWidget
   @override
   Widget build(BuildContext context)
   {
-    return Container();
+    return const ServiceGridList();
   } 
 }
 

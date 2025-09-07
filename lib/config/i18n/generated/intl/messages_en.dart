@@ -24,8 +24,29 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "AbdoAmir": MessageLookupByLibrary.simpleMessage("Abdulrahman Amir"),
     "aboutMe": MessageLookupByLibrary.simpleMessage("About Me"),
+    "aboutMeDescription": MessageLookupByLibrary.simpleMessage(
+      "I’m a Junior Flutter Developer passionate about building high-quality, cross-platform mobile applications. I specialize in responsive UI design and have solid experience in state management using BLoC, Cubit, and Riverpod. I’m skilled in leveraging tools like ScreenUtil for responsiveness, Shimmer for skeleton loading, and efficient caching with Hive, SharedPreferences, and GetStorage.\n\nMy expertise also covers Firebase services including Authentication, Google Sign-In, Realtime Database, Cloud Storage, and user registration flows. I integrate theming, localization, image pre-caching, and video handling (with Picture-in-Picture support) to create seamless user experiences. With a strong focus on clean architecture and OOP principles, I ensure scalable, maintainable, and efficient codebases.\n\nBeyond mobile development, I’m passionate about modding the Call of Duty series, exploring its mechanics and creating custom content. I also enjoy working with Python, where I focus on scripting and automation to streamline workflows and solve real-world challenges. Curious and driven, I thrive on combining creativity and technology to deliver innovative solutions.",
+    ),
+    "backendIntegrationDesc": MessageLookupByLibrary.simpleMessage(
+      "I connect applications to backend services and APIs to bring them to life.With experience in Firebase and REST APIs, I ensure real-time updates and secure data handling. From authentication to data storage, I make sure everything works seamlessly.",
+    ),
+    "backendIntegrationTitle": MessageLookupByLibrary.simpleMessage(
+      "Backend Integration",
+    ),
     "contactMe": MessageLookupByLibrary.simpleMessage("Contact Me"),
+    "crossPlatformDevelopmentDesc": MessageLookupByLibrary.simpleMessage(
+      "I build applications that run seamlessly across multiple platforms using a single Flutter codebase. This approach saves time, reduces costs, and ensures consistent performance and design. Whether it’s Android, iOS, web, or desktop, I make sure the app adapts smoothly.",
+    ),
+    "crossPlatformDevelopmentTitle": MessageLookupByLibrary.simpleMessage(
+      "Cross-platform Development",
+    ),
     "dark": MessageLookupByLibrary.simpleMessage("Dark"),
+    "deploymentPublishingDesc": MessageLookupByLibrary.simpleMessage(
+      "I prepare applications for deployment and guide them through publishing on Google Play and the App Store. This includes app optimization, store listing setup, and compliance with platform requirements. The goal is to make your app available to users with a smooth launch process.",
+    ),
+    "deploymentPublishingTitle": MessageLookupByLibrary.simpleMessage(
+      "Deployment & Publishing",
+    ),
     "downloadCV": MessageLookupByLibrary.simpleMessage("Download CV"),
     "error": MessageLookupByLibrary.simpleMessage("Error"),
     "experience": MessageLookupByLibrary.simpleMessage("Experience"),
@@ -35,10 +56,23 @@ class MessageLookup extends MessageLookupByLibrary {
     "home": MessageLookupByLibrary.simpleMessage("Home"),
     "light": MessageLookupByLibrary.simpleMessage("Light"),
     "logo": MessageLookupByLibrary.simpleMessage("Logo"),
+    "mobileAppDevelopmentDesc": MessageLookupByLibrary.simpleMessage(
+      "I develop high-quality mobile applications for both iOS and Android using Flutter. My focus is on delivering fast, responsive, and user-friendly apps\nthat feel native on each platform. I ensure smooth navigation, intuitive design, and seamless performance across different devices.",
+    ),
+    "mobileAppDevelopmentTitle": MessageLookupByLibrary.simpleMessage(
+      "Mobile App Development (iOS & Android)",
+    ),
     "myProjects": MessageLookupByLibrary.simpleMessage("Projects"),
     "projects": MessageLookupByLibrary.simpleMessage("Projects"),
     "resume": MessageLookupByLibrary.simpleMessage("Resume"),
     "role": MessageLookupByLibrary.simpleMessage("Flutter Developer"),
     "services": MessageLookupByLibrary.simpleMessage("Services"),
+    "uiUxImplementationDesc": MessageLookupByLibrary.simpleMessage(
+      "I transform design prototypes from tools like Figma into functional and pixel-perfect Flutter interfaces. My work emphasizes responsive layouts, clear typography, and engaging animations. The result is a user experience that’s both visually appealing and easy to use.",
+    ),
+    "uiUxImplementationTitle": MessageLookupByLibrary.simpleMessage(
+      "UI/UX Implementation",
+    ),
+    "whoIAM": MessageLookupByLibrary.simpleMessage("Who I Am"),
   };
 }

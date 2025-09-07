@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/project_grid_list.dart';
+
 
 class Projects extends StatelessWidget
 {
@@ -8,7 +10,7 @@ class Projects extends StatelessWidget
   @override
   Widget build(BuildContext context)
   {
-    return Container();
+    return const ProjectsGridList();
   } 
 }
 

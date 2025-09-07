@@ -62,9 +62,9 @@ abstract class AppRouter
           StatefulShellBranch(
             routes: [
               GoRoute(
-                path: AppRoutes.aboutMe,
-                name: AppRoutes.aboutMe,
-                builder: (_, _) => const AboutMe()
+                path: AppRoutes.projects,
+                name: AppRoutes.projects,
+                builder: (_, _) => const Projects()
               ),
             ],
           ),
@@ -73,9 +73,9 @@ abstract class AppRouter
             routes: <RouteBase>
             [
               GoRoute(
-                path: AppRoutes.projects,
-                name: AppRoutes.projects,
-                builder: (context, state) => const Projects(),
+                path: AppRoutes.aboutMe,
+                name: AppRoutes.aboutMe,
+                builder: (context, state) => const AboutMe(),
               ),
             ],
           ),

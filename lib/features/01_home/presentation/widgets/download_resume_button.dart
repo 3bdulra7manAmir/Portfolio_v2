@@ -41,7 +41,7 @@ class DownloadCvButton extends StatelessWidget {
             CustomButton(
               onPressed: isLoading ? null : () {
                 AppLogger.debug('Download CV...');
-                context.read<UrlLauncherCubit>().launchUrlSafe(Urls.resume,);
+                context.read<UrlLauncherCubit>().launchUrlSafe(Urls.resumeGDrive,);
               },
               text: S.current.downloadCV,
               textStyle: AppStyles.semiThin(

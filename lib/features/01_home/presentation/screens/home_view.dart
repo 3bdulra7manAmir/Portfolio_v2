@@ -33,7 +33,7 @@ class Home extends StatelessWidget
           ],
         ),
         const Spacer(),
-        const DeveloperImg(),
+        const DeveloperImgHome(),
       ]
     );
   } 
