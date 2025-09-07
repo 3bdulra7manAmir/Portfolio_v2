@@ -97,7 +97,7 @@ abstract class AppStyles
     );
   }
 
-  /// Size= [16] Weight= [w400], Color= [_#FFFFFF],
+  /// Size= [16] Weight= [w400], Color= [_FFFFFF],
   static TextStyle thin({
     double? fontSize,
     FontWeight? fontWeight,
@@ -119,7 +119,7 @@ abstract class AppStyles
     );
   }
 
-  /// Size= [14] Weight= [w400], Color= [_FFFFFF],
+  /// Size= [14] Weight= [w400], Color= [_707070],
   static TextStyle semiThin({
     double? fontSize,
     FontWeight? fontWeight,

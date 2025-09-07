@@ -7,6 +7,7 @@ abstract class AppMargins
 
   static final symmetric = Symmetric._();
   static final directional = Directional._();
+  static final single = Single._();
   static final special = Special._();
 }
 
@@ -30,6 +31,16 @@ class Directional
     end: 15.w, start: 15.w, bottom: 10.h, top: 25.h,
   );
 }
+
+
+class Single
+{
+  Single._();
+
+  ///[50.h] top
+  EdgeInsets get developerImg => EdgeInsets.only(top: 70.h);
+}
+
 
 class Special
 {

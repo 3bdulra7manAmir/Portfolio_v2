@@ -14,8 +14,10 @@ class _IconsPNG
   _IconsPNG._();
 
   /// [ LandingPage ]
-  //[Al-Haddaf.png]
-  final String appLogo = 'assets/icons/App_Logo/Al-Haddaf.png';
+
+  
+  //[ Bottom Nav Bar ]
+  final String profile = 'assets/icons/Bottom_Nav_Bar/Profile.png';
 }
 ///-----------------------------------------------------------------//
 
@@ -24,17 +26,16 @@ class _IconsPNG
 class _IconsSvg
 {
   _IconsSvg._();
-  ///[ LandingPage ]
+  ///[ Home ]
   // Theme Mode
-  final String darkMode = 'assets/icons/LandingPage/Dark_mode.svg';
-  final String lightMode = 'assets/icons/LandingPage/Light_mode.svg';
-  final String portfolio = 'assets/icons/LandingPage/Portfolio.svg';
+  final String darkMode = 'assets/icons/Home/Dark_mode.svg';
+  final String lightMode = 'assets/icons/Home/Light_mode.svg';
+  final String linkedIn = 'assets/icons/Home/Linkedin_logo.svg';
+  final String instagram = 'assets/icons/Home/Instagram_logo.svg';
+  final String behance = 'assets/icons/Home/Behance_logo.svg';
+  final String github = 'assets/icons/Home/Github_logo.svg';
+  //final String behance = 'assets/icons/Home/Behance_logo.svg';
 
-  //[ Bottom Nav Bar ]
-  final String home = 'assets/icons/Bottom_Nav_Bar/Home.svg';
-  final String menu = 'assets/icons/Bottom_Nav_Bar/Menu.svg';
-  final String profile = 'assets/icons/Bottom_Nav_Bar/Profile.png';
-  final String services = 'assets/icons/Bottom_Nav_Bar/Services.svg';
 }
 ///-----------------------------------------------------------------//
 
@@ -45,7 +46,7 @@ class _IMGsPNG
   _IMGsPNG._();
 
   ///[Home]
-  final String longShotRunningKids = 'assets/imgs/LandingPage/Long_shot_kids_running.png';
+  final String developerImg = 'assets/imgs/Home/Developer_img.png';
 }
 ///-----------------------------------------------------------------//
 
@@ -57,6 +58,6 @@ class _IMGsSvg
 
   ///[Home]
   //First Scroll Card
-  final String introCard = 'assets/imgs/LandingPage/Intro_card.svg';
+  // final String introCard = 'assets/imgs/Home/Intro_card.svg';
 }
 ///-----------------------------------------------------------------//

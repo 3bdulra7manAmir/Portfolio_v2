@@ -24,6 +24,9 @@ class BorderCircular
   /// [circular: 8.r]
   BorderRadius get hireMe => BorderRadius.circular(8.r);
 
+  /// [circular: 12.r]
+  BorderRadius get careerInfo => BorderRadius.circular(12.r);
+
   /// [circular: 16.r]
   BorderRadius get mainGreySpace => BorderRadius.circular(16.r);
 

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../config/theme/color_manager/colors.dart';
-import '../constants/app_borders.dart';
-import '../constants/app_sizes.dart';
-import '../constants/app_styles.dart';
+import '../../../../config/theme/color_manager/colors.dart';
+import '../../constants/app_borders.dart';
+import '../../constants/app_sizes.dart';
+import '../../constants/app_styles.dart';
 
 
 class CustomButton extends StatelessWidget
@@ -33,7 +33,7 @@ class CustomButton extends StatelessWidget
   final double? borderWidth;
   final Color? borderColor;
   final Color? backgroundColor;
-  final void Function() onPressed;
+  final void Function()? onPressed;
   final void Function()? onLongPress;
   final String text;
   final TextStyle? textStyle;

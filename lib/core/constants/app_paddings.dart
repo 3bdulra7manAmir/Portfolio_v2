@@ -30,7 +30,9 @@ class Symmetric
   Symmetric._();
 
   ///[horizontal: 6px]
-  EdgeInsets get sportWidget => EdgeInsets.symmetric(vertical: 6.w);
+  EdgeInsets get careerInfo => EdgeInsets.symmetric(
+    vertical: 15.w, horizontal: 15.h
+  );
 
 }
 

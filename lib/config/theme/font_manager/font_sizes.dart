@@ -22,4 +22,10 @@ abstract class AppFontSizes
 
   /// [24.0]
   static double get xXLarge => 24.0;
+
+  /// [24.0]
+  static double get xXXLarge => 26.0;
+
+  /// [24.0]
+  static double get xXXXLarge => 28.0;
 }

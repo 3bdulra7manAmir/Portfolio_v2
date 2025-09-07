@@ -22,14 +22,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "AbdoAmir": MessageLookupByLibrary.simpleMessage("عبدالرحمن امير"),
     "aboutMe": MessageLookupByLibrary.simpleMessage("عني"),
     "dark": MessageLookupByLibrary.simpleMessage("داكن"),
+    "downloadCV": MessageLookupByLibrary.simpleMessage("تحميل السيرة الذاتية"),
     "error": MessageLookupByLibrary.simpleMessage("خطأ"),
+    "experience": MessageLookupByLibrary.simpleMessage("خبرة"),
+    "happyClients": MessageLookupByLibrary.simpleMessage("عملاء سعيدون"),
+    "hi": MessageLookupByLibrary.simpleMessage("اهلا, انا"),
     "hireMe": MessageLookupByLibrary.simpleMessage("وظفني"),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسيـة"),
     "light": MessageLookupByLibrary.simpleMessage("فاتح"),
     "logo": MessageLookupByLibrary.simpleMessage("الشعار"),
     "myProjects": MessageLookupByLibrary.simpleMessage("مشاريعي"),
+    "projects": MessageLookupByLibrary.simpleMessage("مشاريع"),
     "resume": MessageLookupByLibrary.simpleMessage("السيرة الذاتية"),
+    "role": MessageLookupByLibrary.simpleMessage("مطور فلاتر"),
   };
 }

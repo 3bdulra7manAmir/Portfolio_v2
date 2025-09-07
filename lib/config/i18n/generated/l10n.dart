@@ -98,6 +98,51 @@ class S {
   String get hireMe {
     return Intl.message('وظفني', name: 'hireMe', desc: '', args: []);
   }
+
+  /// `اهلا, انا`
+  String get hi {
+    return Intl.message('اهلا, انا', name: 'hi', desc: '', args: []);
+  }
+
+  /// `عبدالرحمن امير`
+  String get AbdoAmir {
+    return Intl.message('عبدالرحمن امير', name: 'AbdoAmir', desc: '', args: []);
+  }
+
+  /// `مطور فلاتر`
+  String get role {
+    return Intl.message('مطور فلاتر', name: 'role', desc: '', args: []);
+  }
+
+  /// `تحميل السيرة الذاتية`
+  String get downloadCV {
+    return Intl.message(
+      'تحميل السيرة الذاتية',
+      name: 'downloadCV',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `خبرة`
+  String get experience {
+    return Intl.message('خبرة', name: 'experience', desc: '', args: []);
+  }
+
+  /// `مشاريع`
+  String get projects {
+    return Intl.message('مشاريع', name: 'projects', desc: '', args: []);
+  }
+
+  /// `عملاء سعيدون`
+  String get happyClients {
+    return Intl.message(
+      'عملاء سعيدون',
+      name: 'happyClients',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

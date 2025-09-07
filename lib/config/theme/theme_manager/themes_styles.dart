@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../core/constants/app_borders.dart';
 import '../../../core/constants/app_margins.dart';
 import '../../../core/constants/app_sizes.dart';
 import '../color_manager/colors.dart';
@@ -11,21 +12,21 @@ abstract class LightThemeStyles
 {
   LightThemeStyles._();
 
-  // static ElevatedButtonThemeData get elevatedButtonTheme => ElevatedButtonThemeData(
-  //   style: ButtonStyle(
-  //     shape: WidgetStateProperty.all<RoundedRectangleBorder>(
-  //       RoundedRectangleBorder(
-  //         borderRadius: AppRadiuses.circular.textField, // Button Border Radius HERE
-  //         side: BorderSide(color: AppColors.color.kTransparent,),), // Button Side Color HERE
-  //     ),
-  //     backgroundColor: WidgetStateProperty.all<Color>(AppColors.color.kBlack001), // Buton BackGround Text Here...
-  //     overlayColor: WidgetStateProperty.all<Color>(Colors.transparent),
-  //     shadowColor: WidgetStateProperty.all<Color>(Colors.transparent),
-  //     elevation: WidgetStateProperty.all(0),
-  //     splashFactory: NoSplash.splashFactory,
-  //     alignment: Alignment.center,
-  //   ),
-  // );
+static ElevatedButtonThemeData get elevatedButtonTheme => ElevatedButtonThemeData(
+    style: ButtonStyle(
+      shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+        RoundedRectangleBorder(
+          borderRadius: AppRadiuses.circular.hireMe, // Button Border Radius HERE
+          side: BorderSide(color: AppColors.color.kTransparent,),), // Button Side Color HERE
+      ),
+      backgroundColor: WidgetStateProperty.all<Color>(AppColors.color.kTransparent), // Buton BackGround Text Here...
+      overlayColor: WidgetStateProperty.all<Color>(AppColors.color.kTransparent),
+      shadowColor: WidgetStateProperty.all<Color>(AppColors.color.kTransparent),
+      elevation: WidgetStateProperty.all(0),
+      splashFactory: NoSplash.splashFactory,
+      alignment: Alignment.center,
+    ),
+  );
 
 
   static InputDecorationTheme get inputBorder => InputDecorationTheme(
@@ -59,7 +60,7 @@ abstract class LightThemeStyles
     scrolledUnderElevation: 0,
     surfaceTintColor: AppColors.color.kTransparent,
     backgroundColor: AppColors.color.kTransparent,
-    elevation: 2,
+    elevation: 0,
   );
 
   static DialogThemeData get dialogTheme => const DialogThemeData();
@@ -73,21 +74,21 @@ abstract class DarkThemeStyles
 {
   DarkThemeStyles._();
 
-  // static ElevatedButtonThemeData get elevatedButtonTheme => ElevatedButtonThemeData(
-  //   style: ButtonStyle(
-  //     shape: WidgetStateProperty.all<RoundedRectangleBorder>(
-  //       RoundedRectangleBorder(
-  //         borderRadius: AppRadiuses.circular.textField, // Button Border Radius HERE
-  //         side: BorderSide(color: AppColors.color.kTransparent,),), // Button Side Color HERE
-  //     ),
-  //     backgroundColor: WidgetStateProperty.all<Color>(AppColors.color.kBlack001), // Buton BackGround Text Here...
-  //     overlayColor: WidgetStateProperty.all<Color>(Colors.transparent),
-  //     shadowColor: WidgetStateProperty.all<Color>(Colors.transparent),
-  //     elevation: WidgetStateProperty.all(0),
-  //     splashFactory: NoSplash.splashFactory,
-  //     alignment: Alignment.center,
-  //   ),
-  // );
+  static ElevatedButtonThemeData get elevatedButtonTheme => ElevatedButtonThemeData(
+    style: ButtonStyle(
+      shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+        RoundedRectangleBorder(
+          borderRadius: AppRadiuses.circular.hireMe, // Button Border Radius HERE
+          side: BorderSide(color: AppColors.color.kTransparent,),), // Button Side Color HERE
+      ),
+      backgroundColor: WidgetStateProperty.all<Color>(AppColors.color.kTransparent), // Buton BackGround Text Here...
+      overlayColor: WidgetStateProperty.all<Color>(AppColors.color.kTransparent),
+      shadowColor: WidgetStateProperty.all<Color>(AppColors.color.kTransparent),
+      elevation: WidgetStateProperty.all(0),
+      splashFactory: NoSplash.splashFactory,
+      alignment: Alignment.center,
+    ),
+  );
 
 
   static InputDecorationTheme get inputBorder => InputDecorationTheme(
@@ -121,7 +122,7 @@ abstract class DarkThemeStyles
     scrolledUnderElevation: 0,
     surfaceTintColor: AppColors.color.kTransparent,
     backgroundColor: AppColors.color.kTransparent,
-    elevation: 2,
+    elevation: 0,
   );
 
   static DialogThemeData get dialogTheme => const DialogThemeData();

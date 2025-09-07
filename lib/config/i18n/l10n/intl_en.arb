@@ -12,5 +12,14 @@
   "light": "Light",
 
   "logo": "Logo",
-  "hireMe": "Hire me"
+  "hireMe": "Hire me",
+
+  "hi": "Hi, I am",
+  "AbdoAmir": "Abdulrahman Amir",
+  "role": "Flutter Developer",
+  "downloadCV": "Download CV",
+
+  "experience": "Experience",
+  "projects": "Projects",
+  "happyClients": "Happy Clients"
 }

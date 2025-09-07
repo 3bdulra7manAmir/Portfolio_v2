@@ -10,6 +10,7 @@ import '../config/theme/theme_manager/themes.dart';
 import 'config/i18n/localization_controller/localization_cubit.dart';
 import 'config/theme/theme_controller/theme_cubit.dart';
 import 'core/utils/cubit_states.dart';
+import 'core/utils/functions/url_launcher/url_launcher_cubit.dart';
 
 class Portfolio extends StatelessWidget
 {
@@ -65,6 +66,7 @@ class PortfolioMultiProvider extends StatelessWidget
       [
         BlocProvider(create: (_) => ThemeCubit()),
         BlocProvider(create: (_) => LocalizationCubit()),
+        BlocProvider(create: (_) => UrlLauncherCubit()),
       ],
       child: const PortfolioMaterial(),
     );

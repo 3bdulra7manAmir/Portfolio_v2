@@ -8,8 +8,7 @@ import '../../core/constants/app_paddings.dart';
 import '../../core/constants/app_sizes.dart';
 import '../../core/constants/app_styles.dart';
 import '../../core/extensions/margin.dart';
-import '../../core/utils/logger/app_logger.dart';
-import '../../core/widgets/button.dart';
+import '../../core/widgets/buttons/hire_me.dart';
 import '../../core/widgets/column.dart';
 import '../../core/widgets/navbar/nav_bar_items.dart';
 import '../i18n/generated/l10n.dart';
@@ -21,7 +20,7 @@ class MainScaffold extends StatelessWidget {
   final StatefulNavigationShell navigationShell;
 
   void _goBranch(int index) =>
-      navigationShell.goBranch(index, initialLocation: index == navigationShell.currentIndex);
+    navigationShell.goBranch(index, initialLocation: index == navigationShell.currentIndex);
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +54,6 @@ class MainScaffold extends StatelessWidget {
 }
 
 
-
 class Logo extends StatelessWidget {
   const Logo({super.key});
 
@@ -65,21 +63,6 @@ class Logo extends StatelessWidget {
       colors: AppColors.gradient.kLogo.colors,
       S.current.logo.toUpperCase(), 
       style: AppStyles.bold(),
-    );
-  }
-}
-
-
-class HireMeButton extends StatelessWidget {
-  const HireMeButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return CustomButton(
-      text: 'Hire Me',
-      onPressed: () {
-        AppLogger.debug('Hire ME');
-      },
     );
   }
 }
@@ -125,6 +108,5 @@ class MainBody extends StatelessWidget
     );
   }
 }
-
 
 
