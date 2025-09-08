@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../config/theme/color_manager/colors.dart';
 import '../constants/app_borders.dart';
 import '../constants/app_sizes.dart';
+import '../utils/ui/responsive.dart';
 
 
 class CustomDivider1 extends StatelessWidget
@@ -40,8 +41,8 @@ class CustomDivider2 extends StatelessWidget
   Widget build(BuildContext context)
   {
     return Container(
-      width: width ?? 2.w,
-      height: height ?? 60.h,
+      width: DeviceTypeHelper.instance.isMobile ? 2.w : 2.w,
+      height: DeviceTypeHelper.instance.isMobile ? 30.h : 60.h,
       decoration: BoxDecoration(
         color: color ?? AppColors.color.kGrey005,
         borderRadius: borderRadius ?? AppRadiuses.circular.hireMe,

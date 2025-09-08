@@ -4,6 +4,7 @@ import '../../config/theme/color_manager/colors.dart';
 import '../../config/theme/font_manager/font_sizes.dart';
 import '../../config/theme/font_manager/font_weights.dart';
 import '../../config/theme/font_manager/fonts.dart';
+import '../utils/ui/responsive.dart';
 
 abstract class AppStyles
 {
@@ -21,7 +22,7 @@ abstract class AppStyles
   })
   {
     return TextStyle(
-      fontSize: fontSize ?? AppFontSizes.xXLarge.sp,
+      fontSize: fontSize ?? (DeviceTypeHelper.instance.isMobile ? AppFontSizes.xXsmall.sp : AppFontSizes.xXLarge.sp),
       fontWeight: fontWeight ?? AppFontWeights.regularWeight,
       color: fontColor ?? AppColors.color.kWhite001,
       fontFamily: fontFamily ?? AppFonts.font.fontName,
@@ -43,7 +44,7 @@ abstract class AppStyles
   })
   {
     return TextStyle(
-      fontSize: fontSize ?? AppFontSizes.xLarge.sp,
+      fontSize: fontSize ?? (DeviceTypeHelper.instance.isMobile ? AppFontSizes.xXXsmall.sp : AppFontSizes.xLarge.sp),
       fontWeight: fontWeight ?? AppFontWeights.regularWeight,
       color: fontColor ?? AppColors.color.kWhite001,
       fontFamily: fontFamily ?? AppFonts.font.fontName,
@@ -65,7 +66,7 @@ abstract class AppStyles
   })
   {
     return TextStyle(
-      fontSize: fontSize ?? AppFontSizes.large .sp,
+      fontSize: fontSize ?? (DeviceTypeHelper.instance.isMobile ? AppFontSizes.xXXXsmall.sp : AppFontSizes.large.sp),
       fontWeight: fontWeight ?? AppFontWeights.boldWeight,
       color: fontColor ?? AppColors.color.kWhite001,
       fontFamily: fontFamily ?? AppFonts.font.fontName,
@@ -87,7 +88,7 @@ abstract class AppStyles
   })
   {
     return TextStyle(
-      fontSize: fontSize ?? AppFontSizes.xMeduim.sp,
+      fontSize: fontSize ?? (DeviceTypeHelper.instance.isMobile ? AppFontSizes.xXXXXsmall.sp : AppFontSizes.xMeduim.sp),
       fontWeight: fontWeight ?? AppFontWeights.regularWeight,
       color: fontColor ?? AppColors.color.kWhite001,
       fontFamily: fontFamily ?? AppFonts.font.fontName,
@@ -109,7 +110,7 @@ abstract class AppStyles
   })
   {
     return TextStyle(
-      fontSize: fontSize ?? AppFontSizes.meduim.sp,
+      fontSize: fontSize ?? (DeviceTypeHelper.instance.isMobile ? AppFontSizes.xXXXXXsmall.sp : AppFontSizes.meduim.sp),
       fontWeight: fontWeight ?? AppFontWeights.regularWeight,
       color: fontColor ?? AppColors.color.kWhite001,
       fontFamily: fontFamily ?? AppFonts.font.fontName,
@@ -131,7 +132,7 @@ abstract class AppStyles
   })
   {
     return TextStyle(
-      fontSize: fontSize ?? AppFontSizes.xSmall.sp,
+      fontSize: fontSize ?? (DeviceTypeHelper.instance.isMobile ? AppFontSizes.xXXXXXXsmall.sp : AppFontSizes.xSmall.sp),
       fontWeight: fontWeight ?? AppFontWeights.regularWeight,
       color: fontColor ?? AppColors.color.kGrey002,
       fontFamily: fontFamily ?? AppFonts.font.fontName,

@@ -7,6 +7,7 @@ import '../../../../core/constants/app_borders.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_styles.dart';
 import '../../../../core/extensions/padding.dart';
+import '../../../../core/utils/ui/responsive.dart';
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({
@@ -37,7 +38,7 @@ class ProjectCard extends StatelessWidget {
           Sizes.s30.verticalSpace,
           ClipRRect(
             borderRadius: AppRadiuses.circular.mainGreySpace,
-            child: Image.asset(projectLogo, width: 96.w,)
+            child: Image.asset(projectLogo, width: DeviceTypeHelper.instance.isMobile ? 60.w : 96.w,)
           ),
           Sizes.s15.verticalSpace,
           Text(
@@ -48,7 +49,7 @@ class ProjectCard extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          Sizes.s35.verticalSpace,
+          DeviceTypeHelper.instance.isMobile ? Sizes.s15.verticalSpace : Sizes.s35.verticalSpace,
           Text(
             projectDescription,
             style: AppStyles.thin(fontColor: AppColors.color.kGrey001),

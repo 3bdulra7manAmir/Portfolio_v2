@@ -2,6 +2,21 @@ abstract class AppFontSizes
 {
   AppFontSizes._();
 
+  /// [7.0]
+  static double get xXXXXXXsmall => 7.0;
+
+  /// [8.0]
+  static double get xXXXXXsmall => 8.0;
+
+  /// [9.0]
+  static double get xXXXXsmall => 9.0;
+
+  /// [10.0]
+  static double get xXXXsmall => 10.0;
+
+  /// [11.0]
+  static double get xXXsmall => 11.0;
+  
   /// [12.0]
   static double get xXsmall => 12.0;
 
@@ -26,6 +41,6 @@ abstract class AppFontSizes
   /// [24.0]
   static double get xXXLarge => 26.0;
 
-  /// [24.0]
+  /// [28.0]
   static double get xXXXLarge => 28.0;
 }

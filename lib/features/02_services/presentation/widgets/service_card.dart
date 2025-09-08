@@ -7,6 +7,7 @@ import '../../../../core/constants/app_borders.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_styles.dart';
 import '../../../../core/extensions/padding.dart';
+import '../../../../core/utils/ui/responsive.dart';
 
 class ServiceCard extends StatelessWidget {
   const ServiceCard({
@@ -33,7 +34,7 @@ class ServiceCard extends StatelessWidget {
           Sizes.s30.verticalSpace,
           Image.asset(
             serviceImg,
-            width: 96.w,
+            width: DeviceTypeHelper.instance.isMobile ? 60.w : 96.w,
             color: AppColors.color.kOrange003,
             //fit: BoxFit.scaleDown,
           ),
@@ -46,7 +47,7 @@ class ServiceCard extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          Sizes.s35.verticalSpace,
+          DeviceTypeHelper.instance.isMobile ? Sizes.s15.verticalSpace : Sizes.s35.verticalSpace,
           Text(
             serviceDescription,
             style: AppStyles.thin(fontColor: AppColors.color.kGrey001),

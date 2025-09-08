@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../core/utils/ui/responsive.dart';
 import '../../../../core/widgets/gridview_builder.dart';
 import '../../data/model/projects_data.dart';
 import 'project_card.dart';
@@ -14,7 +15,8 @@ class ProjectsGridList extends StatelessWidget {
     return CustomGridbuilder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3, mainAxisSpacing: 32.h,
-        crossAxisSpacing: 32.w, childAspectRatio: 163.w / 120.h,
+        crossAxisSpacing: 32.w, childAspectRatio:
+        (DeviceTypeHelper.instance.isMobile ? 163.w : 163.w) / (DeviceTypeHelper.instance.isMobile ? 35.h : 100.h),
       ),
       itemBuilder: (_, index) {
         final item = projectsData[index];

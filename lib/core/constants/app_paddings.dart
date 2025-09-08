@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../utils/ui/responsive.dart';
+
 
 abstract class AppPadding
 {
@@ -31,7 +33,8 @@ class Symmetric
 
   ///[horizontal: 6px]
   EdgeInsets get careerInfo => EdgeInsets.symmetric(
-    vertical: 15.w, horizontal: 15.h
+    vertical: DeviceTypeHelper.instance.isMobile ? (7.5).w : 15.w,
+    horizontal: DeviceTypeHelper.instance.isMobile ? (7.5).h : 15.h,
   );
 
 }

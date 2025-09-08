@@ -3,8 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../config/theme/color_manager/colors.dart';
 import '../../constants/app_borders.dart';
+import '../../constants/app_margins.dart';
+import '../../constants/app_paddings.dart';
 import '../../constants/app_sizes.dart';
 import '../../constants/app_styles.dart';
+import '../../utils/logger/app_logger.dart';
+import '../../utils/ui/responsive.dart';
 
 
 class CustomButton extends StatelessWidget
@@ -42,7 +46,10 @@ class CustomButton extends StatelessWidget
   Widget build(BuildContext context)
   {
     return Container(
-      margin: margin, width: width, height: height,
+      margin: margin ?? AppMargins.special.zero, 
+      padding: AppPadding.special.zero,
+      width: DeviceTypeHelper.instance.isMobile ? 160.w : width,
+      height: DeviceTypeHelper.instance.isMobile ? 20.h : height,
       child: ElevatedButton(
         style: ButtonStyle(
           padding: WidgetStateProperty.all<EdgeInsetsGeometry?>(padding),
