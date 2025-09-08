@@ -17,11 +17,11 @@ class ServiceGridList extends StatelessWidget {
         crossAxisSpacing: 32.w, childAspectRatio: 163.w / 100.h,
       ),
       itemBuilder: (_, index) {
-        final serviceItem = servicesData[index];
+        final item = servicesData[index];
         return ServiceCard(
-          serviceImg: serviceItem.serviceImg,
-          serviceName: serviceItem.serviceName,
-          serviceDescription: serviceItem.serviceDescription,
+          serviceImg: item.serviceImg,
+          serviceName: item.serviceName,
+          serviceDescription: item.serviceDescription,
         );
       },
       itemCount: servicesData.length,

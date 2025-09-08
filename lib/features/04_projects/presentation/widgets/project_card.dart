@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../../../../config/theme/color_manager/colors.dart';
 import '../../../../config/theme/font_manager/font_weights.dart';
@@ -12,14 +11,18 @@ import '../../../../core/extensions/padding.dart';
 class ProjectCard extends StatelessWidget {
   const ProjectCard({
     super.key,
-    required this.serviceImg,
-    required this.serviceName,
-    required this.serviceDescription,
+    required this.projectLogo,
+    required this.projectName,
+    required this.projectDescription,
+    required this.projectLinkAndroid,
+    required this.projectLinkIOS,
   });
 
-  final String serviceImg;
-  final String serviceName;
-  final String serviceDescription;
+  final String projectLogo;
+  final String projectName;
+  final String projectDescription;
+  final String projectLinkAndroid;
+  final String projectLinkIOS;
 
   @override
   Widget build(BuildContext context) {
@@ -32,17 +35,13 @@ class ProjectCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Sizes.s30.verticalSpace,
-          SvgPicture.asset(
-            serviceImg,
-            width: 96.w,
-            colorFilter: ColorFilter.mode(
-              AppColors.color.kOrange003,
-              BlendMode.srcIn,
-            ),
+          ClipRRect(
+            borderRadius: AppRadiuses.circular.mainGreySpace,
+            child: Image.asset(projectLogo, width: 96.w,)
           ),
           Sizes.s15.verticalSpace,
           Text(
-            serviceName,
+            projectName,
             style: AppStyles.semiBold(
               fontColor: AppColors.color.kOrange003,
               fontWeight: AppFontWeights.semiBoldWeight,
@@ -51,10 +50,10 @@ class ProjectCard extends StatelessWidget {
           ),
           Sizes.s35.verticalSpace,
           Text(
-            serviceDescription,
+            projectDescription,
             style: AppStyles.thin(fontColor: AppColors.color.kGrey001),
             textAlign: TextAlign.center,
-            maxLines: 4,
+            maxLines: 6,
           ),
           Sizes.s20.verticalSpace,
         ],

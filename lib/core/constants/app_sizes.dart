@@ -14,4 +14,5 @@ abstract class Sizes
   static const double s50 = 50.0;
   static const double s70 = 70.0;
   static const double s100 = 100.0;
+  static const double s200 = 200.0;
 }

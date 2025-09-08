@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'core/services/database/shared_preferences/shared_pref_initialization.dart';
+import 'core/services/database/shared_pref_initialization.dart';
 import 'core/utils/bloc_observer.dart';
 import 'main_app.dart';
 

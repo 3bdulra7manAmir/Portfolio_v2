@@ -1,6 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../../utils/logger/app_logger.dart';
+import '../../utils/logger/app_logger.dart';
 
 class SharedPrefInit
 {

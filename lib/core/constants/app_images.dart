@@ -13,11 +13,21 @@ class _IconsPNG
 {
   _IconsPNG._();
 
-  /// [ LandingPage ]
+  /// [ Services ]
+  final String mobileAppDevelopment = 'assets/icons/Home/mobile_app_development.png';
+  final String backendIntegration = 'assets/icons/Home/Backend_integration.png';
+  final String crossPaltForm = 'assets/icons/Home/Cross_platform.png';
+  final String uiUX = 'assets/icons/Home/Ui_Ux.png';
+  final String deployment = 'assets/icons/Home/Deployment.png';
 
-  
-  //[ Bottom Nav Bar ]
-  final String profile = 'assets/icons/Bottom_Nav_Bar/Profile.png';
+
+  /// [ Projects ]
+  final String alHaddaf = 'assets/imgs/Projects/Al_Haddaf.png';
+  final String fluency = 'assets/imgs/Projects/Fluency.png';
+  final String sehtna = 'assets/imgs/Projects/Sehtna.jpg';
+  final String addedPower = 'assets/imgs/Projects/Added_Power.jpg';
+  final String ruknAlAqar = 'assets/imgs/Projects/RuknAlAqar.png';
+  final String manzoma = 'assets/imgs/Projects/Manzoma.jpg';
 }
 ///-----------------------------------------------------------------//
 
@@ -34,13 +44,10 @@ class _IconsSvg
   final String linkedIn = 'assets/icons/Home/Linkedin_logo.svg';
   final String instagram = 'assets/icons/Home/Instagram_logo.svg';
   final String github = 'assets/icons/Home/Github_logo.svg';
+
   //final String behance = 'assets/icons/Home/Behance_logo.svg';
 
-  final String mobileAppDevelopment = 'assets/icons/Home/mobile_app_development.svg';
-  final String backendIntegration = 'assets/icons/Home/Backend_logo.svg';
-
-
-
+  final String download = 'assets/icons/Home/Download.svg';
 }
 ///-----------------------------------------------------------------//
 

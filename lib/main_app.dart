@@ -1,4 +1,3 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -19,22 +18,7 @@ class Portfolio extends StatelessWidget
   @override
   Widget build(BuildContext context)
   {
-    return const PortfolioDevicePreview();
-  }
-}
-
-
-class PortfolioDevicePreview extends StatelessWidget
-{
-  const PortfolioDevicePreview({super.key,});
-
-  @override
-  Widget build(BuildContext context)
-  {
-    return DevicePreview(
-      enabled: false,
-      builder: (context) => const PortfolioScreenUtil(),
-    );
+    return const PortfolioScreenUtil();
   }
 }
 

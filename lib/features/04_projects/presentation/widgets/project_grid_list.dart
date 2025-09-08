@@ -14,17 +14,21 @@ class ProjectsGridList extends StatelessWidget {
     return CustomGridbuilder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3, mainAxisSpacing: 32.h,
-        crossAxisSpacing: 32.w, childAspectRatio: 163.w / 100.h,
+        crossAxisSpacing: 32.w, childAspectRatio: 163.w / 120.h,
       ),
       itemBuilder: (_, index) {
-        final serviceItem = servicesData[index];
+        final item = projectsData[index];
         return ProjectCard(
-          serviceImg: serviceItem.projectLogo,
-          serviceName: serviceItem.projectName,
-          serviceDescription: serviceItem.projectDescription,
+          projectLogo: item.projectLogo,
+          projectName: item.projectName,
+          projectDescription: item.projectDescription,
+          projectLinkAndroid: item.projectLinkAndroid ?? '',
+          projectLinkIOS: item.projectLinkIOS ?? '',
         );
       },
-      itemCount: servicesData.length,
+      itemCount: projectsData.length,
     );
   }
 }
+
+

@@ -19,7 +19,7 @@ class Resume extends StatelessWidget
       child: BlocBuilder<ResumeCubit, DefaultState<void>>(
         builder: (context, state) {
           if (state is LoadingState) {
-            return const Center(child: CustomLoadingIndicator());
+            return const CustomLoadingIndicator();
           } 
           else if (state is SuccessState) {
             return const ResumeWebView();

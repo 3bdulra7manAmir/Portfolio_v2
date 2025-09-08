@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../../../../config/theme/color_manager/colors.dart';
 import '../../../../config/theme/font_manager/font_weights.dart';
@@ -32,13 +31,11 @@ class ServiceCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Sizes.s30.verticalSpace,
-          SvgPicture.asset(
+          Image.asset(
             serviceImg,
             width: 96.w,
-            colorFilter: ColorFilter.mode(
-              AppColors.color.kOrange003,
-              BlendMode.srcIn,
-            ),
+            color: AppColors.color.kOrange003,
+            //fit: BoxFit.scaleDown,
           ),
           Sizes.s15.verticalSpace,
           Text(

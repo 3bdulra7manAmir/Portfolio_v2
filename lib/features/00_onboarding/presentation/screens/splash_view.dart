@@ -1,36 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 import '../../../../config/router/app_router.dart';
 import '../../../../config/router/app_routes.dart';
-import '../../../../core/services/database/shared_preferences/shared_pref_manager.dart';
-import '../../../../core/widgets/circular_indicator.dart';
 
-
-class Splash extends StatefulWidget
-{
+class Splash extends StatefulWidget {
   const Splash({super.key});
 
   @override
   State<Splash> createState() => _SplashState();
 }
 
-class _SplashState extends State<Splash>
-{
+class _SplashState extends State<Splash> with TickerProviderStateMixin {
+  late final AnimationController _controller;
+
   @override
-  void initState()
-  {
+  void initState() {
     super.initState();
-    setFirstLaunch();
-    //Future.delayed(const Duration(seconds: 9), () => AppRouter.router.pushReplacementNamed(AppRoutes.home),);
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) => AppRouter.router.pushReplacementNamed(AppRoutes.home),);
-  }
 
-  void setFirstLaunch()
-  {
-    SharedPrefManager().setFirstLaunch(0);
+    _controller = AnimationController(vsync: this);
+
+    /// Navigate after animation finishes
+    _controller.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        AppRouter.router.pushReplacementNamed(AppRoutes.home);
+      }
+    });
   }
 
   @override
-  Widget build(BuildContext context) => 
-    const Scaffold(body: CustomLoadingIndicator(),);
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Lottie.asset(
+          'assets/jsons/Lottie/Handwritten_Welcome.json',
+          controller: _controller,
+          onLoaded: (composition) {
+            _controller
+              ..duration = composition.duration
+              ..forward();
+          },
+        ),
+      ),
+    );
+  }
 }

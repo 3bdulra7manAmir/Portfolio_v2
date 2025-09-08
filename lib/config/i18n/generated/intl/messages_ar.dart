@@ -27,6 +27,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "aboutMeDescription": MessageLookupByLibrary.simpleMessage(
       "أنا مطور Flutter مبتدئ شغوف ببناء تطبيقات موبايل عالية الجودة تعمل عبر الأنظمة المختلفة. أتقن تصميم واجهات المستخدم المتجاوبة ولدي خبرة قوية في إدارة الحالة باستخدام BLoC و Cubit و Riverpod. كما أجيد استخدام ScreenUtil لجعل الواجهات متجاوبة، و Shimmer لعرض الهياكل العظمية، وإدارة التخزين المؤقت بكفاءة باستخدام Hive و SharedPreferences و GetStorage.\n\nتشمل خبرتي أيضًا خدمات Firebase مثل تسجيل الدخول والمصادقة، تسجيل الدخول عبر Google، قاعدة البيانات اللحظية، التخزين السحابي، وتدفقات تسجيل المستخدم. أدمج كذلك نظام الثيمات، دعم تعدد اللغات (Localization)، التحميل المسبق للصور، وتشغيل الفيديو مع دعم Picture-in-Picture لتقديم تجارب سلسة للمستخدم. ومع تركيزي القوي على معمارية نظيفة (Clean Architecture) ومبادئ البرمجة كائنية التوجه (OOP)، أضمن كتابة شيفرة قابلة للتوسع والصيانة بكفاءة.\n\nبعيدًا عن تطوير التطبيقات، لدي شغف بتعديل ألعاب Call of Duty واستكشاف آلياتها وصناعة محتوى مخصص. كما أنني أستمتع بالعمل بلغة Python، خصوصًا في كتابة السكربتات وأدوات الأتمتة لتبسيط المهام وحل التحديات العملية. بدافعي وفضولي القوي أحب الجمع بين تطوير Flutter واهتماماتي الأخرى في البرمجة والتعديل لدفع الإبداع والتقنية إلى الأمام.",
     ),
+    "addedPower": MessageLookupByLibrary.simpleMessage("ادد باور"),
+    "addedPowerDescription": MessageLookupByLibrary.simpleMessage(
+      "أدِد باور هو حلك الموثوق لشراء قطع غيار السيارات الأصلية وعالية الجودة مباشرة من الموردين المعتمدين. سواء كنت مالك سيارة أو مختص صيانة، يوفر لك تطبيقنا وصولًا سريعًا وآمنًا إلى القطع التي تحتاجها بكل سهولة من خلال هاتفك.",
+    ),
+    "alHaddaf": MessageLookupByLibrary.simpleMessage("الهداف"),
     "backendIntegrationDesc": MessageLookupByLibrary.simpleMessage(
       "أربط التطبيقات بالخدمات الخلفية وواجهات الـ APIs لإضفاء الحيوية عليها. بخبرتي مع Firebase وواجهات REST APIs أضمن تحديثات في الوقت الحقيقي ومعالجة بيانات آمنة. من تسجيل الدخول إلى تخزين البيانات، أتأكد أن كل شيء يعمل بانسيابية.",
     ),
@@ -50,12 +55,23 @@ class MessageLookup extends MessageLookupByLibrary {
     "downloadCV": MessageLookupByLibrary.simpleMessage("تحميل السيرة الذاتية"),
     "error": MessageLookupByLibrary.simpleMessage("خطأ"),
     "experience": MessageLookupByLibrary.simpleMessage("خبرة"),
+    "fluency": MessageLookupByLibrary.simpleMessage("فلونسي"),
+    "fluencyDescription": MessageLookupByLibrary.simpleMessage(
+      "Fluency هي منصة سعودية تتيح للمستخدمين ممارسة اللغة الإنجليزية مع معلمين أجانب محترفين من جميع أنحاء العالم. تساعد الأفراد على تطوير مهاراتهم اللغوية في المجالات المهنية والتعليمية، وكذلك عند السفر إلى الخارج حيث تكون اللغة الإنجليزية ضرورية غالبًا.",
+    ),
+    "haddafDescription": MessageLookupByLibrary.simpleMessage(
+      "الهداف هو المنصة المثالية للرياضيين والمدربين وعشاق الرياضة! أنشئ ملفك كلاعب أو مدرب واستعرض إنجازاتك وإحصائياتك. تسويق المواهب: روّج لمهاراتك وتواصل مع الأندية ووكلاء الرياضة. رفع الفيديوهات والصور: شارك أفضل لحظاتك وأبرز أداءك. تواصل بسهولة: تفاعل مع الأندية والمدربين الرياضيين بكل سلاسة.",
+    ),
     "happyClients": MessageLookupByLibrary.simpleMessage("عملاء سعيدون"),
     "hi": MessageLookupByLibrary.simpleMessage("اهلا, انا"),
     "hireMe": MessageLookupByLibrary.simpleMessage("وظفني"),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسيـة"),
     "light": MessageLookupByLibrary.simpleMessage("فاتح"),
     "logo": MessageLookupByLibrary.simpleMessage("الشعار"),
+    "manzoma": MessageLookupByLibrary.simpleMessage("منظومة"),
+    "manzomaDescription": MessageLookupByLibrary.simpleMessage(
+      "منظومة هي أداة ذكية وقوية لإدارة سير العمل، صممت لمساعدة الأفراد والفرق على تنظيم المهام والتعاون بفاعلية. تعمل على تبسيط التواصل بين أعضاء الفريق وتقليل العمل اليدوي وزيادة الإنتاجية بشكل عام. مع منظومة يمكنك متابعة التقدم وتوزيع المسؤوليات والبقاء مركزًا على الأهداف. سواء كنت فريقًا صغيرًا أو مؤسسة كبيرة، فإن منظومة تتكيف مع احتياجات سير عملك.",
+    ),
     "mobileAppDevelopmentDesc": MessageLookupByLibrary.simpleMessage(
       "أقوم بتطوير تطبيقات موبايل عالية الجودة لكلٍ من iOS و Android باستخدام Flutter. أركز على تقديم تطبيقات سريعة الاستجابة وسهلة الاستخدام تشبه التطبيقات الأصلية على كل منصة. أضمن تنقلًا سلسًا، وتصميمًا بديهيًا، وأداءً ممتازًا عبر مختلف الأجهزة.",
     ),
@@ -66,6 +82,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "projects": MessageLookupByLibrary.simpleMessage("مشاريع"),
     "resume": MessageLookupByLibrary.simpleMessage("السيرة الذاتية"),
     "role": MessageLookupByLibrary.simpleMessage("مطور فلاتر"),
+    "ruknAlAqar": MessageLookupByLibrary.simpleMessage("ركن العقار"),
+    "ruknDescription": MessageLookupByLibrary.simpleMessage(
+      "اكتشف طريقة أذكى لشراء وبيع وتأجير الشقق مع ركن العقار – شريكك الموثوق في مجال العقارات. سواء كنت تبحث عن منزل أحلامك، أو تعرض عقارًا للبيع، أو تبحث عن إيجار، يوفر لك تطبيقنا تجربة سهلة وسريعة ومصممة خصيصًا لتلبية احتياجاتك.",
+    ),
+    "sehtna": MessageLookupByLibrary.simpleMessage("صحتنا"),
+    "sehtnaDescription": MessageLookupByLibrary.simpleMessage(
+      "صحتنا هو حل متكامل لإدارة الرعاية الصحية مصمم لتبسيط العمليات للمستشفيات والأطباء والمرضى. سواء كنت تدير المواعيد، أو تصل إلى السجلات الطبية، أو تتابع تاريخ المريض، فإن صحتنا يوفر منصة قوية وسهلة الاستخدام مصممة لتلبية احتياجات الرعاية الصحية الحديثة.",
+    ),
     "services": MessageLookupByLibrary.simpleMessage("خدماتي"),
     "uiUxImplementationDesc": MessageLookupByLibrary.simpleMessage(
       "أحوّل النماذج التصميمية من أدوات مثل Figma إلى واجهات Flutter عملية ومتقنة. أركز على تصميمات متجاوبة، وخطوط واضحة، ورسوم متحركة جذابة. والنتيجة هي تجربة مستخدم بصرية ممتعة وسهلة الاستخدام.",
