@@ -7,7 +7,6 @@ import '../../constants/app_margins.dart';
 import '../../constants/app_paddings.dart';
 import '../../constants/app_sizes.dart';
 import '../../constants/app_styles.dart';
-import '../../utils/logger/app_logger.dart';
 import '../../utils/ui/responsive.dart';
 
 
